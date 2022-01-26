@@ -8,21 +8,13 @@ public class CoffeeMachineV1 extends AbstractCoffeeMachine {
 
     @Override
     public boolean makeEspresso() {
-        int coffee = 22;
-        int water = 30;
-        if (makeCoffee(coffee, water)) {
-            return true;
-        }
-        return false;
+        int coffee = 22, water = 30;
+        return makeCoffee(coffee, water);
     }
 
     @Override
     public boolean makeAmericano() {
-        int coffee = 22;
-        int water = 100;
-        if (makeCoffee(coffee, water)) {
-            return true;
-        }
-        return false;
+        int coffee = 22, water = 100;
+        return makeCoffee(coffee, water);
     }
 }
