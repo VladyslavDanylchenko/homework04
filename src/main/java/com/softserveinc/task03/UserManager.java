@@ -18,6 +18,7 @@ public class UserManager {
         for (User user : users) {
             if (user.getLogin().equals(login)) {
                 users.remove(user);
+                break;
             }
         }
     }
